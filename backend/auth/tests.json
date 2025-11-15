@@ -1,0 +1,31 @@
+{
+  "tests": [
+    {
+      "name": "Login with valid credentials",
+      "method": "POST",
+      "body": {
+        "email": "admin@school.kz",
+        "password": "test123"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "token": "string",
+        "user": {
+          "id": "number",
+          "email": "string"
+        }
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Login with invalid credentials",
+      "method": "POST",
+      "body": {
+        "email": "wrong@email.com",
+        "password": "wrong"
+      },
+      "expectedStatus": 401,
+      "bodyMatcher": "partial"
+    }
+  ]
+}

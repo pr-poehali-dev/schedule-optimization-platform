@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Get statistics",
+      "method": "GET",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "teachers": "number",
+        "classes": "number"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

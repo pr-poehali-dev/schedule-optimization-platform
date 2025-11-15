@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "name": "Get subjects",
+      "method": "GET",
+      "expectedStatus": 200
+    }
+  ]
+}
